@@ -1,4 +1,4 @@
-# Temperature compensation in negative and positive feedback circadian clock models
+# Systematic analysis of negative and positive feedback loops for robustness and temperature compensation in circadian rhythms
 The codes can be useful to reproduce the results of the research article 'Systematic analysis of negative and positive feedback loops for robustness and temperature compensation in circadian rhythms'. For our research we have performed the simulations, for 4 different circadian oscillators - 1. Two-Variable-Goodwin-NFB; 2. cyano-KaiABC; 3. cPNFB; and 4. Selkov-PFB. 
 The codes are written in Matlab. 
 Each of the previously stated network motifs has five folders with estimates for the following scenarios: Arithmatic-Mean calculation; BIC calculation; Temperature compensation with single reaction temperature change resistant; Time Course calculation; and Temperature compensation with two reactions temperature change resistant. On the other hand, the folder CV-Calculations measures and compares how robust these 4 different circadian oscillators are.
