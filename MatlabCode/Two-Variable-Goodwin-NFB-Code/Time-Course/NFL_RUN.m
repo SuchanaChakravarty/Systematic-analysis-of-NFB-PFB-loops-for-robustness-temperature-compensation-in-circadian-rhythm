@@ -16,7 +16,7 @@ plot(t,c(:,2),'.-','Color',[rand,rand,rand],'DisplayName','Y')
 X_val(:,i) = c(:,1);
 Y_val(:,i) = c(:,2);
 [peakval,locval]=findpeaks(X_val(:,i),t);
-period(:,i) = max(diff(locval));
+period(:,i) = mean(diff(locval));
 period1 = period;
 end
 save -ascii NFL_period_avg.dat period1
