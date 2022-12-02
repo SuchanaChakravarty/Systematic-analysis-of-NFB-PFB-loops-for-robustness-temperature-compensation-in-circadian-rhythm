@@ -28,7 +28,7 @@ PO_val(:,i) = c(:,4);
 B_val(:,i) = c(:,5);
 A_val(:,i) = c(:,6);
 [peakval,locval]=findpeaks(PP_val(:,i),t);
-period(:,i) = max(diff(locval));
+period(:,i) = mean(diff(locval));
 period1 = period;
 end
 save -ascii Luca_osc_period_avg.dat period1
