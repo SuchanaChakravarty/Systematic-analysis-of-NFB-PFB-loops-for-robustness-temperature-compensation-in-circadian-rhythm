@@ -52,7 +52,7 @@ ST_val(:,i) = c(:,2);
 S_val(:,i) = c(:,3);
 M_val(:,i) = c(28750,4);
 [peakval,locval]=findpeaks(ST_val(:,i),t);
-period(:,i) = max(diff(locval));
+period(:,i) = mean(diff(locval));
 end
 period1(:,q) = period;
 M_val1(:,q) = M_val((length(tspan)-1)/2,1:7);
