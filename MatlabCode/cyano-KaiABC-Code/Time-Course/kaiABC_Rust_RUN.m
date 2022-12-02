@@ -20,7 +20,7 @@ T_val(:,i) = c(:,1);
 ST_val(:,i) = c(:,2);
 S_val(:,i) = c(:,3);
 [peakval,locval]=findpeaks(ST_val(:,i),t);
-period(:,i) = max(diff(locval));
+period(:,i) = mean(diff(locval));
 period1 = period;
 end
 save -ascii Rust_period_avg.dat period1
