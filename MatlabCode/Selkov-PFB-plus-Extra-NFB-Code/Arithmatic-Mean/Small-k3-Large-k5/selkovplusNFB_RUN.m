@@ -32,7 +32,7 @@ Y_val(:,i) = c(:,1);
 U_val(:,i) = c(:,2);
 M_val(:,i) = c(28750,3);
 [peakval,locval]=findpeaks(U_val(:,i),t);
-period(:,i) = max(diff(locval));
+period(:,i) = mean(diff(locval));
 end
 period1(:,q) = period;
 M_val1(:,q) = M_val((length(tspan)-1)/2,1:7);
