@@ -16,7 +16,7 @@ for i=1:7
 Y_val(:,i) = c(:,1);
 U_val(:,i) = c(:,2);
 [peakval,locval]=findpeaks(U_val(:,i),t);
-period(:,i) = max(diff(locval));
+period(:,i) = mean(diff(locval));
 period1 = period;
 end
 save -ascii subdep_period_avg.dat period1
