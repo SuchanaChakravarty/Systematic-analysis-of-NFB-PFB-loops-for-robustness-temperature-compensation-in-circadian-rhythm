@@ -44,7 +44,7 @@ k5 = 383.83.*exp(-(5.17.*10^3)./(8.3144598.*Temp));
 % ************************************************************************
 % Initialization
 % ************************************************************************
-j = 1.0; % ocunter for time 
+j = 1.0; % cocunter for time 
 nY = 0.48.*Vs; % initial Y represented in numbers
 nU = 0.0075.*Vs; % initial U represented in numbers
 
